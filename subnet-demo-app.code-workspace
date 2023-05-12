@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "./"
+    },
+    {
+      "path": "./clarity-l1"
+    },
+    {
+      "path": "./clarity-l2"
+    }
+  ],
+  "settings": {}
+}

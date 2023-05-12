@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("https://alphaassets.hiro.so/AeonikMono-Regular.woff2")
+      format("woff2"),
+    url("https://alphaassets.hiro.so/AeonikMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sprat";
+  src: url("assets/SpratCndRegular.woff2") format("woff2"),
+    url("assets/SpratCndRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  --size: 180px;
+
+  background: #e4e0dc;
+  background-image: linear-gradient(#f2f0ed 0.1em, transparent 0.1em),
+    linear-gradient(90deg, #f2f0ed 0.1em, transparent 0.1em);
+  background-size: var(--size) var(--size);
+  background-position: center -148px;
+}
+
+.navlink::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  transform: translateY(-3px);
+  background-color: #0d0c0c;
+  transition: width 0.1s;
+}
+.navlink:hover::after,
+.navlink.active::after {
+  width: 100%;
+}
+
+footer .links a {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+footer .links a::after {
+  display: inline-block;
+  content: "↗";
+  transition: transform 200ms;
+}
+footer .links a:hover::after {
+  transform: translate(2px, -2px);
+}
+
+footer .links a:active::after {
+  transform: translate(4px, -4px);
+}
+
+ul.instruction-text {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+ul.instruction-text a {
+  text-decoration: underline;
+}
+
+/* INPUT NUMBER APPEARANCE */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.custom-backdrop {
+  background: rgba(228, 224, 220, 0.85);
+}
