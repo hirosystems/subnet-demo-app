@@ -1,6 +1,9 @@
 # Subnet Demo App
 
-The project demonstrates some of the capabilities of subnets through a simple NFT marketplace where minting, listing and offers happen on L2.
+[See the Youtube Presentation](https://www.youtube.com/watch?v=FHKf-9C0LoI)
+
+The project demonstrates some of the capabilities of subnets through a simple hypothetical NFT marketplace where minting, listing and offers happen on L2.
+This demo app showcases how to mint NFTs, list, transfer, and withdraw them from the subnet back to the mainchain. This is a demo application made to illustrate how wallets, exchanges and developer teams can leverage subnets in their applications.
 
 Flow:
 
