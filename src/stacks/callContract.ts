@@ -75,21 +75,6 @@ export function callL2SubnetContract(
   });
 }
 
-export function callL1NftContract(
-  functionName: string,
-  functionArgs: ClarityValue[],
-  postConditions?: PostCondition[],
-) {
-  return callContract(l1Network, {
-    contractAddress: L1_NFT_CONTRACT_ADDR,
-    contractName: NFT_CONTRACT_NAME,
-    functionName,
-    functionArgs,
-    postConditionMode: PostConditionMode.Deny,
-    postConditions,
-  });
-}
-
 export async function callReadOnlyL1NftContract(
   functionName: string,
   functionArgs: ClarityValue[],
