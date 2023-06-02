@@ -25,11 +25,10 @@ Note: Clarinet v1.6.x is currently not available on Homebrew, we are working to 
 - `./clarity-l1` NFT contract to be deployed on stacks L1
 - `./clarity-l2` NFT and marketplace contracts to be deployed on L2
 
-:::note
+**Note:**
 
 Clarinet's full support for subnets is in the roadmap. However, the `clarity-l2` contract can be deployed manually, then checked and tested with `clarinet`.
 
-:::
 
 ## Start project locally
 
