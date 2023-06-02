@@ -27,7 +27,6 @@ Note: Clarinet v1.6.x is currently not available on Homebrew, we are working to 
 
 :::note
 
-The `clarity-l2` contracts have to be deployed manually, be can still be checked and tested with `clarinet`.
 Clarinet's full support for subnets is in the roadmap. However, the `clarity-l2` contract can be deployed manually, then checked and tested with `clarinet`.
 
 :::
