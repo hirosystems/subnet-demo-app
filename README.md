@@ -32,7 +32,7 @@ Clarinet's full support for subnets is in the roadmap. However, the `clarity-l2`
 
 ## Start project locally
 
-### Integrate Clarinet
+### Run `clarinet integrate`
 
 In the `./clarity-l1` folder, run the following command:
 
