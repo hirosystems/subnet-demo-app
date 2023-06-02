@@ -9,6 +9,8 @@ This demo application showcases how to mint NFTs, list, transfer, and withdraw t
 
 Clarinet version 1.6.2. You can follow the steps [here](https://docs.hiro.so/clarinet/getting-started#install-clarinet) to download the latest version of Clarinet.
 
+Note: Clarinet v1.6.x is currently not available on Homebrew, we are working to release it soon.
+
 ## Features
 
 - NFTs exchanges can happen on a subnet (L2)
