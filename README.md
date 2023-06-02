@@ -2,10 +2,16 @@
 
 [See the Youtube Presentation](https://www.youtube.com/watch?v=FHKf-9C0LoI)
 
-The project demonstrates some of the capabilities of subnets through a simple hypothetical NFT marketplace where minting, listing and offers happen on L2.
-This demo app showcases how to mint NFTs, list, transfer, and withdraw them from the subnet back to the mainchain. This is a demo application made to illustrate how wallets, exchanges and developer teams can leverage subnets in their applications.
+[Subnets](https://github.com/hirosystems/stacks-subnets#readme) are a layer-2 scaling solution in the Stacks blockchain. The Subnet demo app demonstrates subnets' capabilities through a simple hypothetical NFT marketplace where minting, listing, and offers happen on L2.
+This demo application showcases how to mint NFTs, list, transfer, and withdraw them from the subnet back to the main chain. This demo application illustrates how wallets, exchanges, and developer teams can leverage subnets in their applications.
 
-Flow:
+## Prerequisite
+
+Clarinet version 1.6.2. You can follow the steps [here](https://docs.hiro.so/clarinet/getting-started#install-clarinet) to download the latest version of Clarinet.
+
+Note: Clarinet v1.6.x is currently not available on Homebrew, we are working to release it soon.
+
+## Features
 
 - NFTs exchanges can happen on a subnet (L2)
   - Users can deposit their NFTs on the subnet
@@ -19,20 +25,27 @@ Flow:
 - `./clarity-l1` NFT contract to be deployed on stacks L1
 - `./clarity-l2` NFT and marketplace contracts to be deployed on L2
 
-Note: the `clarity-l2` contracts have to be deployed manually, be can still be checked and tested with `clarinet`.
-Clarinet full support for subnets is in the roadmap. However, the `clarity-l2` contract can be deployed manually, then checked and tested with `clarinet`.
+:::note
+
+Clarinet's full support for subnets is in the roadmap. However, the `clarity-l2` contract can be deployed manually, then checked and tested with `clarinet`.
+
+:::
 
 ## Start project locally
 
-#### Clarinet integrate
+### Run `clarinet integrate`
 
-In the `./clarity-l1` folder run the following command:
+In the `./clarity-l1` folder, run the following command:
 
 ```sh
 clarinet integrate
 ```
 
-Wait a few of minutes, as the subnet node is not ready until Stacks block 9.
+If you find any errors, please refer to our [troubleshooting guide](https://docs.hiro.so/clarinet/troubleshooting).
+
+Wait a few minutes, as the subnet node reaches Stacks block 9.
+
+![Stacks block 9](images/microblock_9.png)
 
 Go to `clarity-l2/scripts/`.
 
@@ -47,8 +60,9 @@ Deposit some STX on the subnet by using the following command:
 ```sh
 node ./fund.js
 ```
+The output of the above command is a `txid`. You can explore more about the transaction by following the links in the services section of the clarinet integrate. The instructions for the same are documented [here](https://docs.hiro.so/subnets/getting-started#interacting-with-the-subnet).
 
-Wait a couple minutes for the funds to transfer. Then, publish the l2 contracts.
+Wait a couple of minutes for the funds to transfer. Then, publish the l2 contracts.
 
 ```sh
 node ./publish.js subnet-demo-marketplace ../contracts/subnet-demo-marketplace.clar 0
@@ -61,7 +75,7 @@ Register the nft contract on the subnet:
 node ./register.js
 ```
 
-## Run front app
+## Run the front app
 
 In the repo root `./` run
 
