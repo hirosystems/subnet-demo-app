@@ -27,7 +27,7 @@ export function Subnet() {
   useImmediateInterval(async () => {
     const pendingWithdrawals = await getPendingSTXWithdrawals(address);
     setPendingStxWithdrawals(pendingWithdrawals);
-  }, 5_000);
+  }, 10_000);
 
   const confirmWithdraw = async (w: STXWithdrawEvent) => {
     const res = await fetch(

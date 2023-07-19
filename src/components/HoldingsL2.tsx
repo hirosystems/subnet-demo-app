@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import { H4 } from "./ui/Headings";
 import { useImmediateInterval } from "../lib/hooks";
 import { NFTType, getL2NFTs } from "../stacks/apiCalls";
 import { NFT } from "./NFT";
@@ -15,7 +14,7 @@ export function HoldingsL2({ address }: HoldingsProps) {
 
   useImmediateInterval(async () => {
     setNfts(await getL2NFTs(address));
-  }, 3_000);
+  }, 5_000);
 
   if (nfts.length === 0) return null;
 

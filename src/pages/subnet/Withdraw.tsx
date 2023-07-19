@@ -21,7 +21,7 @@ export function Withdraw() {
     const l2Info = await getL2Balance(address);
     setL2Balance(parseFloat(l2Info.balance) / 1_000_000);
     setIsLoading(false);
-  }, 5_000);
+  }, 10_000);
 
   const withdrawDisabled = !l2Balance;
 

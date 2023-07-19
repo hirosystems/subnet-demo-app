@@ -38,7 +38,7 @@ export function Header({ isLoggedIn, userData }: HeaderProps) {
     }
   }, 5_000);
 
-  useImmediateInterval(async () => {}, 5_000);
+  useImmediateInterval(async () => {}, 10_000);
 
   function signout() {
     userSession.signUserOut();

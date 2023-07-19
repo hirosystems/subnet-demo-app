@@ -15,7 +15,7 @@ export function HoldingsL1({ address }: HoldingsProps) {
 
   useImmediateInterval(async () => {
     setNfts(await getL1NFTs(address));
-  }, 3_000);
+  }, 5_000);
   if (nfts.length === 0) return null;
 
   return (

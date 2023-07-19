@@ -14,7 +14,7 @@ export function AllMyNFTs() {
 
   useImmediateInterval(async () => {
     setNfts(await getAllNFTs(address));
-  }, 3_000);
+  }, 5_000);
 
   if (nfts.length === 0) return null;
 

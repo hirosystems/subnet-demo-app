@@ -29,7 +29,7 @@ export function Deposit() {
     const l1Info = await getL1Balance(address);
     setL1Balance(parseFloat(l1Info.balance) / 1_000_000);
     setIsLoading(false);
-  }, 5_000);
+  }, 10_000);
 
   const handleSTXDeposit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();

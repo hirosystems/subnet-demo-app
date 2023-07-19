@@ -49,7 +49,7 @@ export function HomeInstructions({ address }: { address: string }) {
     const balance = await getL2Balance(address);
     setL2Balance(Number(balance.balance));
     setLoading(false);
-  }, 3000);
+  }, 10_000);
 
   const instructions = getInstructions(loading, l2Balance);
 

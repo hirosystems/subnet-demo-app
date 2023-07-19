@@ -38,7 +38,7 @@ export function PendingNFTWithdrawals({ address }: HoldingsProps) {
 
   useImmediateInterval(async () => {
     setPendingWithdrawals(await getPendingNFTWithdrawals(address));
-  }, 3_000);
+  }, 5_000);
 
   const withdraw = async (w: NFTWithdrawDetails) => {
     const postConditions = w.owner

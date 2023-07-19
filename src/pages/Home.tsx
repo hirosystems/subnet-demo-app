@@ -18,7 +18,7 @@ export function Home() {
   useImmediateInterval(async () => {
     setNfts(await getL2MarketplaceNFTs());
     setIsLoading(false);
-  }, 3_000);
+  }, 5_000);
 
   const address = data.profile.stxAddress.testnet;
 
