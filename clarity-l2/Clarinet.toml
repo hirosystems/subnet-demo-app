@@ -10,17 +10,17 @@ contract_id = 'SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait'
 [contracts.subnet-demo-marketplace]
 path = 'contracts/subnet-demo-marketplace.clar'
 clarity_version = 2
-epoch = 2.1
+epoch = 2.4
 
 [contracts.parfait-nft]
 path = 'contracts/parfait-nft-l2.clar'
 clarity_version = 2
-epoch = 2.1
+epoch = 2.4
 
 [contracts.subnet]
 path = 'contracts/subnet.clar'
 clarity_version = 2
-epoch = 2.1
+epoch = 2.4
 [repl.analysis]
 passes = []
 

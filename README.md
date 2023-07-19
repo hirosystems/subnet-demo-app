@@ -7,9 +7,7 @@ This demo application showcases how to mint NFTs, list, transfer, and withdraw t
 
 ## Prerequisite
 
-Clarinet version 1.6.2. You can follow the steps [here](https://docs.hiro.so/clarinet/getting-started#install-clarinet) to download the latest version of Clarinet.
-
-Note: Clarinet v1.6.x is currently not available on Homebrew, we are working to release it soon.
+Clarinet version 1.7. You can follow the steps [here](https://docs.hiro.so/clarinet/getting-started#install-clarinet) to download the latest version of Clarinet.
 
 ## Features
 
@@ -67,6 +65,7 @@ Wait a couple of minutes for the funds to transfer. Then, publish the l2 contrac
 node ./publish.js subnet-demo-marketplace ../contracts/subnet-demo-marketplace.clar 0
 node ./publish.js parfait-nft ../contracts/parfait-nft-l2.clar 1
 ```
+
 
 Register the nft contract on the subnet:
 

@@ -3,8 +3,8 @@ import {
   Tx,
   Chain,
   Account,
-} from "https://deno.land/x/clarinet@v1.5.4/index.ts";
-import { assertEquals } from "https://deno.land/std@0.177.0/testing/asserts.ts";
+} from "https://deno.land/x/clarinet@v1.7.0/index.ts";
+import { assertEquals } from "https://deno.land/std@0.193.0/testing/asserts.ts";
 
 const CONTRACT_NAME = "parfait-nft";
 

@@ -46,6 +46,9 @@ plan:
             cost: 290960
             path: ".cache/requirements/ST13F481SBR0R7Z6NMMH8YV2FJJYXA5JPA0AD3HP9.subnet-v1-2.clar"
             clarity-version: 2
+      epoch: "2.1"
+    - id: 3
+      transactions:
         - contract-publish:
             contract-name: parfait-nft
             expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
@@ -53,4 +56,4 @@ plan:
             path: contracts/parfait-nft.clar
             anchor-block-only: true
             clarity-version: 2
-      epoch: "2.1"
+      epoch: "2.4"

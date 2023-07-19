@@ -14,7 +14,7 @@ contract_id = 'ST13F481SBR0R7Z6NMMH8YV2FJJYXA5JPA0AD3HP9.subnet-traits-v1'
 [contracts.parfait-nft]
 path = 'contracts/parfait-nft.clar'
 clarity_version = 2
-epoch = 2.1
+epoch = 2.4
 
 [repl.analysis]
 passes = ['check_checker']

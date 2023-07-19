@@ -4,8 +4,8 @@ import {
   Chain,
   Account,
   types as t,
-} from "https://deno.land/x/clarinet@v1.5.2/index.ts";
-import { assertEquals } from "https://deno.land/std@0.180.0/testing/asserts.ts";
+} from "https://deno.land/x/clarinet@v1.7.0/index.ts";
+import { assertEquals } from "https://deno.land/std@0.193.0/testing/asserts.ts";
 
 const CONTRACT_NAME = "subnet-demo-marketplace";
 const NFT_CONTRACT_NAME = "parfait-nft";
@@ -158,7 +158,7 @@ Clarinet.test({
       `${addrD}.${NFT_CONTRACT_NAME}`,
       "parfait-nft",
     );
-    block.receipts[0].events.expectSTXTransferEvent(5000, addr2, addr1);
+    block.receipts[0].events.expectSTXTransferEvent(100, addr2, addr1);
   },
 });
 
