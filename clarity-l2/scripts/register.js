@@ -17,7 +17,7 @@ async function main() {
 
   const txOptions = {
     contractAddress: deployerAddr,
-    contractName: "subnet-v1-2",
+    contractName: "subnet-v3-0-1",
     functionName: "register-new-nft-contract",
     functionArgs: [
       contractPrincipalCV(deployerAddr, "parfait-nft"),

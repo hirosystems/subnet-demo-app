@@ -14,7 +14,7 @@ async function main() {
   //   "38d5e877eaa95c651e0415d7a6ec32bfdd71e0530b60e1411fcc2420fd9746c701";
   // const networkUrl = "https://api.subnets.testnet.hiro.so";
   const network = new StacksTestnet({ url: networkUrl });
-  // network.chainId = 1426085122;
+  network.chainId = 1426085120;
 
   const contractName = process.argv[2];
   const contractFilename = process.argv[3];
