@@ -61,7 +61,7 @@ export function PendingNFTWithdrawals({ address }: HoldingsProps) {
       contractPrincipalCV(L1_NFT_CONTRACT_ADDR, NFT_CONTRACT_NAME),
       uintCV(w.id),
       standardPrincipalCV(address),
-      uintCV(w.withdrawalId),
+      uintCV(0),
       uintCV(w.withdrawalHeight),
       someCV(contractPrincipalCV(L1_NFT_CONTRACT_ADDR, NFT_CONTRACT_NAME)),
       w.merkleEntryCV.withdrawalRoot,

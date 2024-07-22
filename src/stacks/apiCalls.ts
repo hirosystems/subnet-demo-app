@@ -162,7 +162,6 @@ export type NFTWithdrawEvent = {
   type: string;
   id: bigint;
   withdrawalHeight: bigint;
-  withdrawalId: bigint;
 };
 
 export type NFTWithdrawDetails = {
@@ -202,13 +201,8 @@ export async function getPendingNFTWithdrawals(address: string) {
       const event: NFTWithdrawEvent = {
         sender,
         type: eventType,
-        id: BigInt(content.id.value),
+        id: BigInt(parseInt(content.id.value)),
         withdrawalHeight: BigInt(content["withdrawal-height"].value),
-        withdrawalId: BigInt(
-          content["withdrawal-id"]
-            ? content["withdrawal-id"].value
-            : content["withdrawal_id"].value,
-        ),
       };
 
       return acc.concat(event);
@@ -217,7 +211,7 @@ export async function getPendingNFTWithdrawals(address: string) {
   const details = await Promise.all(
     events.map(async (e) => {
       const res = await fetch(
-        `${L2_URL}/v2/withdrawal/nft/${e.withdrawalHeight}/${e.sender}/${e.withdrawalId}/${L2_NFT_CONTRACT_ADDR}/${NFT_CONTRACT_NAME}/${e.id}`,
+        `${L2_URL}/v2/withdrawal/nft/${e.withdrawalHeight}/${e.sender}/0/${L2_NFT_CONTRACT_ADDR}/${NFT_CONTRACT_NAME}/${e.id}`,
       );
       const merkleEntry = await res.json();
       const merkleEntryCV = {

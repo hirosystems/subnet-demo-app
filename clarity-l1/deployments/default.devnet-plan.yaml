@@ -38,17 +38,17 @@ plan:
             cost: 4810
             path: ".cache/requirements/ST13F481SBR0R7Z6NMMH8YV2FJJYXA5JPA0AD3HP9.subnet-traits-v1.clar"
             clarity-version: 2
-        - requirement-publish:
-            contract-id: ST13F481SBR0R7Z6NMMH8YV2FJJYXA5JPA0AD3HP9.subnet-v1-2
-            remap-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
-            remap-principals:
-              ST13F481SBR0R7Z6NMMH8YV2FJJYXA5JPA0AD3HP9: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
-            cost: 290960
-            path: ".cache/requirements/ST13F481SBR0R7Z6NMMH8YV2FJJYXA5JPA0AD3HP9.subnet-v1-2.clar"
-            clarity-version: 2
       epoch: "2.1"
     - id: 3
       transactions:
+        - requirement-publish:
+            contract-id: ST173JK7NZBA4BS05ZRATQH1K89YJMTGEH1Z5J52E.subnet-v3-0-1
+            remap-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            remap-principals:
+              ST173JK7NZBA4BS05ZRATQH1K89YJMTGEH1Z5J52E: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 299240
+            path: ".cache/requirements/ST173JK7NZBA4BS05ZRATQH1K89YJMTGEH1Z5J52E.subnet-v3-0-1.clar"
+            clarity-version: 2
         - contract-publish:
             contract-name: parfait-nft
             expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
