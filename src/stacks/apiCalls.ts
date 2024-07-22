@@ -169,7 +169,6 @@ export type NFTWithdrawDetails = {
   type: string;
   id: bigint;
   withdrawalHeight: bigint;
-  withdrawalId: bigint;
   completed: boolean;
   owner: null | string;
   merkleEntryCV: {
